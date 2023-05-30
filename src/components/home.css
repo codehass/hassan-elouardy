@@ -1,0 +1,33 @@
+.container {
+  width: 80%;
+  margin: 5rem auto auto auto;
+  color: #fff;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 75vh;
+  width: 80%;
+}
+
+.container h1 {
+  font-size: 5rem;
+}
+
+.spain {
+  color: #ffb800;
+}
+
+.content {
+  font-size: 2.7rem;
+}
+
+.home button {
+  color: #19172e;
+  background-color: #f90;
+  padding: 12px 36px;
+  border-radius: 5px;
+  width: 150px;
+}
