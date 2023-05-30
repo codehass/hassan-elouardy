@@ -41,7 +41,7 @@ class Navbar extends Component {
             </li>
           </ul>
           <button className="btn-nav" type="button" id="mobile" onClick={this.handleClick} onKeyDown={this.handleKeyDown}>
-            <i className={clicked ? 'fas fa-times' : 'fas fa-bars'} />
+            <i className={clicked ? 'fas fa-bars' : 'fas fa-times'} />
           </button>
         </div>
       </div>
