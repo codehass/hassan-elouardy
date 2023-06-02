@@ -1,0 +1,95 @@
+.work {
+  margin-bottom: 3rem;
+}
+
+.work h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.project {
+  display: flex;
+  justify-content: center;
+}
+
+.project img {
+  width: 50%;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
+  background: #fff;
+}
+
+.project-info {
+  background-color: #19172e;
+  display: flex;
+  flex-direction: column;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+
+  /* justify-content: space-evenly; */
+  gap: 10px;
+
+  /* padding: 15px 20px 25px 15px; */
+  padding: 2%;
+}
+
+.project-info h3 {
+  font-size: 2.2rem;
+  background-color: #19172e;
+}
+
+.project-description {
+  font-size: 1rem;
+  background-color: #19172e;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
+
+.buttons,
+.stack {
+  background-color: #19172e;
+}
+
+.stack {
+  display: flex;
+}
+
+.stack p {
+  border: 1px solid #f90;
+  padding: 10px 15px;
+  font-size: 18px;
+  margin-right: 15px;
+  border-radius: 47px;
+}
+
+.buttons {
+  display: flex;
+}
+
+.buttons a {
+  color: #0e0c23;
+  background-color: #f90;
+  padding: 1rem 1.3rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  margin-right: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  background-color: #f90;
+  color: #0e0c23;
+}
+
+@media screen and (max-width: 988px) {
+  /* .project {
+    flex-direction: column;
+    width: 100%;
+  } */
+}
