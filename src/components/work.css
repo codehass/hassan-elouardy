@@ -1,0 +1,153 @@
+.work {
+  margin-bottom: 3rem;
+}
+
+.work h2 {
+  font-size: 2rem;
+}
+
+.line {
+  background: #f90;
+  width: 10%;
+  margin-top: 10px;
+  height: 2px;
+  margin-bottom: 3rem;
+}
+
+.project {
+  display: flex;
+  justify-content: center;
+}
+
+.project img {
+  width: 50%;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
+  background: #fff;
+}
+
+.project-info {
+  background-color: #19172e;
+  display: flex;
+  flex-direction: column;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+
+  /* justify-content: space-evenly; */
+  gap: 10px;
+
+  /* padding: 15px 20px 25px 15px; */
+  padding: 2%;
+}
+
+.project-info h3 {
+  font-size: 2.2rem;
+  background-color: #19172e;
+}
+
+.project-description {
+  font-size: 1rem;
+  background-color: #19172e;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
+
+.buttons,
+.stack {
+  background-color: #19172e;
+}
+
+.stack {
+  display: flex;
+  margin: 10px 0;
+}
+
+.stack p {
+  border: 1px solid #f90;
+  padding: 10px 15px;
+  font-size: 18px;
+  margin-right: 15px;
+  border-radius: 47px;
+}
+
+.buttons {
+  display: flex;
+}
+
+.buttons a {
+  padding: 1rem 1.3rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  margin-right: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  background-color: #f90;
+  color: #0e0c23;
+}
+
+.btn-live {
+  color: #0e0c23;
+  background-color: #f90;
+}
+
+.btn-code {
+  background: #19172e;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.icon-code {
+  background-color: #19172e;
+  color: #fff;
+}
+
+.scroll-btn {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background: #f90;
+  border-radius: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+.next-left {
+  transform: rotate(180deg);
+}
+
+.point {
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  background: #19172e;
+}
+
+.next-right {
+  font-size: 18px;
+  background-color: #f90;
+}
+
+@media screen and (max-width: 988px) {
+  /* .project {
+    flex-direction: column;
+    width: 100%;
+  } */
+}
