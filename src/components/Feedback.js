@@ -35,44 +35,42 @@ const Feedback = () => {
   };
 
   return (
-    <div className="container">
-      <div className="feedback">
-        <h3 className="feedback-title">
-          What
-          <span>people are saying</span>
-        </h3>
-        <div className="feedback-section">
-          <div className="feedback-infos">
-            <div className="feedback-img">
-              <span className="coma" />
-              <img
-                src={feedbacks[currentProjectIndex].img}
-                alt="feedback1"
-                border="0"
-              />
-            </div>
-            <h4>{feedbacks[currentProjectIndex].name}</h4>
-            <p className="position">
-              {feedbacks[currentProjectIndex].position}
-            </p>
+    <div className="feedback">
+      <h3 className="feedback-title">
+        What
+        <span>people are saying</span>
+      </h3>
+      <div className="feedback-section">
+        <div className="feedback-infos">
+          <div className="feedback-img">
+            <span className="coma" />
+            <img
+              src={feedbacks[currentProjectIndex].img}
+              alt="feedback1"
+              border="0"
+            />
           </div>
-          <div className="feedback-text">
-            <p>
-              {feedbacks[currentProjectIndex].text}
-            </p>
-          </div>
-          <div className="feedback-btn">
-            <button type="button" className="next-feedback next-left-feedback" onClick={previousProject}>
-              <GrNext className="next-right-feedback" />
-            </button>
-            <div className="feedback-point" />
-            <div className="feedback-point" />
-            <div className="feedback-point" />
-            <div className="feedback-point" />
-            <button type="button" className="next-feedback" onClick={nextProject}>
-              <GrNext className="next-right-feedback" />
-            </button>
-          </div>
+          <h4>{feedbacks[currentProjectIndex].name}</h4>
+          <p className="position">
+            {feedbacks[currentProjectIndex].position}
+          </p>
+        </div>
+        <div className="feedback-text">
+          <p>
+            {feedbacks[currentProjectIndex].text}
+          </p>
+        </div>
+        <div className="feedback-btn">
+          <button type="button" className="next-feedback next-left-feedback" onClick={previousProject}>
+            <GrNext className="next-right-feedback" />
+          </button>
+          <div className="feedback-point" />
+          <div className="feedback-point" />
+          <div className="feedback-point" />
+          <div className="feedback-point" />
+          <button type="button" className="next-feedback" onClick={nextProject}>
+            <GrNext className="next-right-feedback" />
+          </button>
         </div>
       </div>
     </div>

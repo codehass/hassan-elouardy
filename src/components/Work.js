@@ -55,60 +55,58 @@ const Work = () => {
   };
 
   return (
-    <div className="container">
-      <div className="work">
-        <div>
-          <h2>My Recent Work</h2>
-          <div className="line" />
-        </div>
-        <div className="project">
-          <img src={projects[currentProjectIndex].img} alt="code" />
-          <div className="project-info">
-            <h3>{projects[currentProjectIndex].title}</h3>
-            <p className="project-description">{projects[currentProjectIndex].description}</p>
-            <div className="stack">
-              {projects[currentProjectIndex].stack.map((item) => (
-                <p
-                  key={item}
-                >
-                  {item}
-                </p>
-              ))}
-            </div>
-            <div className="buttons">
-              <a
-                href={
+    <div className="work">
+      <div>
+        <h2>My Recent Work</h2>
+        <div className="line" />
+      </div>
+      <div className="project">
+        <img src={projects[currentProjectIndex].img} alt="code" />
+        <div className="project-info">
+          <h3>{projects[currentProjectIndex].title}</h3>
+          <p className="project-description">{projects[currentProjectIndex].description}</p>
+          <div className="stack">
+            {projects[currentProjectIndex].stack.map((item) => (
+              <p
+                key={item}
+              >
+                {item}
+              </p>
+            ))}
+          </div>
+          <div className="buttons">
+            <a
+              href={
                   projects[currentProjectIndex].live
           }
-                className="btn-live"
-              >
-                Live Demo
-                <IoOpenOutline className="icon" />
-              </a>
-              <a
-                href={
+              className="btn-live"
+            >
+              Live Demo
+              <IoOpenOutline className="icon" />
+            </a>
+            <a
+              href={
                   projects[currentProjectIndex].code
           }
-                className="btn-code"
-              >
-                Source Code
-                <BsCodeSlash className="icon icon-code" />
-              </a>
+              className="btn-code"
+            >
+              Source Code
+              <BsCodeSlash className="icon icon-code" />
+            </a>
 
-            </div>
           </div>
         </div>
-        <div className="scroll-btn">
-          <button type="button" className="btn-next next-left" onClick={previousProject}>
-            <GrNext className="next-right" />
-          </button>
-          <div className="point" />
-          <div className="point" />
-          <div className="point" />
-          <button type="button" className="btn-next" onClick={nextProject}>
-            <GrNext className="next-right" />
-          </button>
-        </div>
+      </div>
+      <div className="scroll-btn">
+        <button type="button" className="btn-next next-left" onClick={previousProject}>
+          <GrNext className="next-right" />
+        </button>
+        <div className="point" />
+        <div className="point" />
+        <div className="point" />
+        <button type="button" className="btn-next" onClick={nextProject}>
+          <GrNext className="next-right" />
+        </button>
       </div>
     </div>
   );
