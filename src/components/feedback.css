@@ -1,5 +1,10 @@
 .feedback {
-  margin-bottom: 3rem;
+  margin: 3rem auto;
+  height: calc(83vh - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .feedback-title {
@@ -14,7 +19,7 @@
 }
 
 .feedback-section {
-  width: 60%;
+  width: 80%;
   background-color: #19172e;
   margin: auto;
   border-radius: 10px;
@@ -127,4 +132,17 @@
 
 .next-left-feedback {
   rotate: 180deg;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .feedback {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .feedback-section {
+    width: 100%;
+  }
 }
