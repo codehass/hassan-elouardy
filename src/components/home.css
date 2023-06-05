@@ -25,9 +25,12 @@
 }
 
 .home button {
-  color: #19172e;
-  background-color: #f90;
-  padding: 12px 36px;
-  border-radius: 5px;
   width: 150px;
+  background-color: #f90;
+  color: black;
+  border: none;
+  height: 45px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
 }
