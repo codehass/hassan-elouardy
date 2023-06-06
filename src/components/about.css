@@ -1,0 +1,120 @@
+.about {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  margin: auto;
+  margin-bottom: 9rem;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about__content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  line-height: 32px;
+}
+
+.about__button {
+  width: 230px;
+  background-color: #f90;
+  color: black;
+  border: none;
+  height: 45px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 10px;
+}
+
+.about__button a {
+  text-decoration: none;
+  background-color: #f90;
+  color: black;
+}
+
+.about__skills {
+  display: flex;
+  margin-top: 2rem;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skill {
+  width: 30%;
+  background: #19172e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+}
+
+.skill img,
+.skill h3 {
+  background: #19172e;
+}
+
+.skill ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px 0;
+  justify-content: center;
+  align-items: center;
+  background: #19172e;
+}
+
+.skill ul li {
+  border: 1px solid #f90;
+  padding: 5px;
+  font-size: 18px;
+  margin: 5px;
+  border-radius: 47px;
+  color: #f90;
+}
+
+@media screen and (max-width: 425px) {
+  .about__skills {
+    flex-direction: column;
+  }
+
+  .skill {
+    width: 90%;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+  .about {
+    margin: 4rem auto;
+  }
+
+  .about__skills {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill {
+    width: 60%;
+    padding: 15px 0;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 991.98px) {
+  .about {
+    margin: 4rem auto;
+  }
+
+  .about__skills {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill {
+    padding: 35px 0;
+    width: 60%;
+  }
+}
