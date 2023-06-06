@@ -3,41 +3,7 @@ import './work.css';
 import { IoOpenOutline } from 'react-icons/io5';
 import { BsCodeSlash } from 'react-icons/bs';
 import { GrNext } from 'react-icons/gr';
-import img from './space-travel.png';
-
-const projects = [{
-  title: 'My 1',
-  img,
-  description: 'The Budget application is a mobile web application designed for managing your budget. It provides a list of transactions categorized by type, allowing you to easily track your expenses and analyze your spending. The implementation of this application involved utilizing Ruby on Rails and PostgreSQL.',
-  stack: ['React', 'Rails', 'JavaScript'],
-  live: 'www.google.com',
-  code: 'www.google.com',
-},
-{
-  title: 'Project 2',
-  img,
-  description: 'The Budget application is a mobile web application designed for managing your budget. It provides a list of transactions categorized by type, allowing you to easily track your expenses and analyze your spending. The implementation of this application involved utilizing Ruby on Rails and PostgreSQL.',
-  stack: ['React', 'Rails', 'CSS', 'HTML'],
-  live: 'www.google.com',
-  code: 'www.google.com',
-},
-{
-  title: 'Project 3',
-  img,
-  description: 'The Budget application is a mobile web application designed for managing your budget. It provides a list of transactions categorized by type, allowing you to easily track your expenses and analyze your spending. The implementation of this application involved utilizing Ruby on Rails and PostgreSQL.',
-  stack: ['React', 'Rails', 'CSS', 'HTML'],
-  live: 'www.google.com',
-  code: 'www.google.com',
-},
-{
-  title: 'Project 4',
-  img,
-  description: 'The Budget application is a mobile web application designed for managing your budget. It provides a list of transactions categorized by type, allowing you to easily track your expenses and analyze your spending. The implementation of this application involved utilizing Ruby on Rails and PostgreSQL.',
-  stack: ['Rails', 'CSS', 'HTML'],
-  live: 'www.google.com',
-  code: 'www.google.com',
-},
-];
+import { projects } from '../data/data';
 
 const Work = () => {
   const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
@@ -55,7 +21,7 @@ const Work = () => {
   };
 
   return (
-    <div className="work">
+    <div className="work" id="work">
       <div>
         <h2>My Recent Work</h2>
         <div className="line" />
