@@ -8,23 +8,42 @@
   font-family: 'Roboto', sans-serif;
 }
 
+li,
+a {
+  text-decoration: none;
+  background: #19172e;
+}
+
+.logo {
+  color: #f90;
+  font-weight: 600;
+}
+
+.navbar button,
+.navbar button i {
+  background: #19172e;
+}
+
 .navbar {
   display: flex;
-  justify-content: center;
+  gap: 10px;
   align-items: center;
-  width: 80%;
-  margin: 3.1rem auto auto auto;
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 20px;
   height: 5rem;
   background-color: #19172e;
-  border-radius: 5px;
-  border: 1px white solid;
   font-size: 1.2rem;
+  position: fixed;
+  top: 0;
+  z-index: 10;
 }
 
 .navbar ul {
-  width: 90%;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  gap: 30px;
   background-color: #19172e;
 }
 
@@ -40,10 +59,12 @@
 }
 
 .navbar ul li:last-child a {
-  color: #19172e;
-  background-color: #f90;
-  padding: 12px 36px;
-  border-radius: 5px;
+  border: 1px solid #f90;
+  padding: 10px 15px;
+  font-size: 18px;
+  margin-right: 15px;
+  border-radius: 47px;
+  color: #f90;
 }
 
 #mobile {
@@ -56,8 +77,10 @@
     border: none;
     margin-top: 0;
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     padding-right: 10%;
+    position: fixed;
+    top: 0;
   }
 
   .navbar ul {
