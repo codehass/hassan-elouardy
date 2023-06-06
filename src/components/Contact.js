@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <div className="contact" id="contact">
       <div className="contact-text">
-        <span>Have an ideo?</span>
+        <span>Have an idea? </span>
         I can help you to Start your project.
       </div>
       <form className="form" onSubmit={handleSubmit}>
