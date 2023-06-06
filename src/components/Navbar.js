@@ -22,22 +22,22 @@ class Navbar extends Component {
 
     return (
       <div className="navbar">
-        <a href="https://google.com" className="logo">H.ELOUARDY</a>
+        <a href="#home" className="logo">H.ELOUARDY</a>
         <ul className={clicked ? 'ul active' : 'ul'}>
           <li>
-            <a href="https://google.com">Home</a>
+            <a href="#home">Home</a>
           </li>
           <li>
-            <a href="https://google.com">About Me</a>
+            <a href="#about">About Me</a>
           </li>
           <li>
-            <a href="https://google.com">Projects</a>
+            <a href="#work">Projects</a>
           </li>
           <li>
-            <a href="https://google.com">Reviews</a>
+            <a href="#feedback">Reviews</a>
           </li>
           <li>
-            <a href="https://google.com">Contact Me</a>
+            <a href="#contact">Contact Me</a>
           </li>
         </ul>
         <button className="btn-nav" type="button" id="mobile" onClick={this.handleClick} onKeyDown={this.handleKeyDown}>
