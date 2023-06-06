@@ -1,6 +1,5 @@
 .feedback {
   margin: 3rem auto;
-  height: calc(83vh - 80px);
   display: flex;
   flex-direction: column;
   justify-content: center;
