@@ -46,6 +46,7 @@
 
 .skill {
   width: 30%;
+  padding-top: 20px;
   background: #19172e;
   display: flex;
   flex-direction: column;
