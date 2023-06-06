@@ -33,20 +33,21 @@ const About = () => (
         <h3>Frameworks</h3>
         <ul>
           <li>React</li>
-          <li>Express</li>
-          <li>Node</li>
+          <li>Ruby on Rails</li>
           <li>Bootstrap</li>
-          <li>Materialize</li>
+          <li>Tailwind CSS</li>
         </ul>
       </div>
       <div className="skill">
         <img src={iconLanguages} alt="Languages" />
         <h3>Languages</h3>
         <ul>
+          <li>JavaScript</li>
+          <li>Ruby</li>
+          <li>C++</li>
+          <li>Java</li>
           <li>HTML</li>
           <li>CSS</li>
-          <li>JavaScript</li>
-          <li>SQL</li>
         </ul>
       </div>
       <div className="skill">
@@ -56,7 +57,7 @@ const About = () => (
           <li>Git</li>
           <li>GitHub</li>
           <li>MySQL</li>
-          <li>MongoDB</li>
+          <li>PostgreSQL</li>
           <li>Heroku</li>
         </ul>
       </div>
