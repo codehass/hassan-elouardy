@@ -3,7 +3,7 @@ import './home.css';
 
 const Home = () => (
   <div className="home" id="home">
-    <h3>Hello! I am Hassan EL OUARDY</h3>
+    <h3>Hello! I am Hassan EL OUARDY.</h3>
     <h1>
       Building
       <span className="spain"> Web Experiences </span>
