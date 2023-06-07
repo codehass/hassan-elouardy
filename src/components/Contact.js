@@ -1,26 +1,82 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './contact.css';
-import { useForm, ValidationError } from '@formspree/react';
 
 const Contact = () => {
-  const [state, handleSubmit] = useForm('mnqykbbo');
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
+
+  const [successMessage, setSuccessMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const response = await fetch('https://formspree.io/f/mnqykbbo', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (response.ok) {
+      setFormData({
+        name: '',
+        email: '',
+        message: '',
+      });
+
+      setSuccessMessage('Your message was sent successfully!');
+      setErrorMessage('');
+
+      setTimeout(() => {
+        setSuccessMessage('');
+      }, 2000);
+    } else {
+      setSuccessMessage('');
+      setErrorMessage('Failed to send your message. Please try again later.');
+
+      setTimeout(() => {
+        setErrorMessage('');
+      }, 2000);
+    }
+  };
 
   return (
     <div className="contact" id="contact">
       <div className="contact-text">
-        <span>Have an ideo?</span>
-        I can help you to Start your project.
+        <span>Have an idea? </span>
+        I can help you start your project.
       </div>
+      {successMessage && <p className="success-message">{successMessage}</p>}
+      {errorMessage && <p className="error-message">{errorMessage}</p>}
       <form className="form" onSubmit={handleSubmit}>
-        <input type="text" id="name" name="name" placeholder="Full Name" required="required" />
-        <input id="email" type="email" name="Email" placeholder="Email" required="required" />
-        <textarea id="textarea" name="message" placeholder="Message" required="required" />
-        <ValidationError
-          prefix="Message"
-          field="message"
-          errors={state.errors}
+        <input
+          type="text"
+          placeholder="Name"
+          value={formData.name}
+          onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+          required
         />
-        <button type="submit" disabled={state.submitting}>Submit</button>
+
+        <input
+          type="email"
+          placeholder="Email"
+          value={formData.email}
+          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+          required
+        />
+        <textarea
+          id="textarea"
+          placeholder="Message"
+          value={formData.message}
+          onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+          required
+        />
+        <button type="submit">Submit</button>
       </form>
     </div>
   );

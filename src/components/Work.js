@@ -42,19 +42,23 @@ const Work = () => {
           </div>
           <div className="buttons">
             <a
+              target="_blank"
               href={
                   projects[currentProjectIndex].live
           }
               className="btn-live"
+              rel="noreferrer"
             >
               Live Demo
               <IoOpenOutline className="icon" />
             </a>
             <a
+              target="_blank"
               href={
                   projects[currentProjectIndex].code
           }
               className="btn-code"
+              rel="noreferrer"
             >
               Source Code
               <BsCodeSlash className="icon icon-code" />
