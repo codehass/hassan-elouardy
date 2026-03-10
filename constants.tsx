@@ -41,7 +41,7 @@ export const PROJECTS: Project[] = [
     problem: 'Hotel staff needed a robust internal tool to manage bookings, cabins, and guests efficiently.',
     solution: 'Built a full-featured dashboard with complex filtering, real-time stats, and a custom UI library using Compound Component Pattern.',
     impact: 'Optimized daily operations with seamless data synchronization and intuitive data visualization.',
-    image: 'https://images.unsplash.com/photo-1551033406-611cf9a28f67?q=80&w=2574&auto=format&fit=crop',
+    image: '/wild-oasis-admin.png',
     year: '2023',
   },
   {
