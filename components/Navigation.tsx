@@ -19,9 +19,7 @@ const Navigation: React.FC = () => {
     <nav className="fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-lab-gray">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         <NavLink to="/" className="group flex items-center gap-2">
-          <div className="w-8 h-8 bg-lab-green text-white flex items-center justify-center font-mono font-bold text-sm">
-            HE
-          </div>
+          <img src="/logo.svg" alt="HE Logo" className="w-8 h-8 rounded-lg" />
           <div className="flex flex-col">
             <span className="font-sans font-bold text-sm tracking-wide text-lab-text group-hover:text-lab-green transition-colors uppercase">
               Hassan El Ouardy

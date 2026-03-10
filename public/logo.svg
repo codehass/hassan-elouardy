@@ -1,0 +1,6 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="128" height="128" rx="24" fill="#14532d"/>
+  <text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="64" font-weight="700" fill="#f1f5f9">HE</text>
+  <path d="M10 10L30 10M10 10L10 30" stroke="#22c55e" stroke-width="4" stroke-linecap="round"/>
+  <path d="M118 118L98 118M118 118L118 98" stroke="#22c55e" stroke-width="4" stroke-linecap="round"/>
+</svg>

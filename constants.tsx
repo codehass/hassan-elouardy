@@ -1,7 +1,7 @@
 import { Project, Article, TechCapability } from './types';
 
 export const NAV_LINKS = [
-  { name: 'INDEX', path: '/' },
+  { name: 'HOME', path: '/' },
   { name: 'PROJECTS', path: '/projects' },
   { name: 'LOGS', path: '/articles' },
   { name: 'COMM', path: '/contact' },
