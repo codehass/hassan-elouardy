@@ -229,11 +229,25 @@ export const TECH_CAPABILITIES: TechCapability[] = [
     icons: ['https://cdn.simpleicons.org/opencv']
   },
   { 
-    name: 'Backend API', 
+    name: 'Backend & Rails', 
     level: 88, 
     category: 'Infrastructure', 
-    description: 'FastAPI, Node.js, Express',
-    icons: ['https://cdn.simpleicons.org/fastapi', 'https://cdn.simpleicons.org/nodedotjs', 'https://cdn.simpleicons.org/express']
+    description: 'FastAPI, Rails, Node.js, Express',
+    icons: ['https://cdn.simpleicons.org/fastapi', 'https://cdn.simpleicons.org/rubyonrails', 'https://cdn.simpleicons.org/nodedotjs', 'https://cdn.simpleicons.org/express']
+  },
+  { 
+    name: 'Data Engineering', 
+    level: 85, 
+    category: 'AI/ML', 
+    description: 'Apache Airflow, PySpark, Spark ML',
+    icons: ['https://cdn.simpleicons.org/apacheairflow', 'https://cdn.simpleicons.org/apachespark']
+  },
+  { 
+    name: 'AI Orchestration', 
+    level: 82, 
+    category: 'AI/ML', 
+    description: 'LangChain, LangGraph, MLflow',
+    icons: ['https://cdn.simpleicons.org/langchain', 'https://cdn.simpleicons.org/mlflow']
   },
   { 
     name: 'TypeScript', 
@@ -248,13 +262,6 @@ export const TECH_CAPABILITIES: TechCapability[] = [
     category: 'Core', 
     description: 'PostgreSQL, Supabase, MongoDB',
     icons: ['https://cdn.simpleicons.org/postgresql', 'https://cdn.simpleicons.org/supabase', 'https://cdn.simpleicons.org/mongodb']
-  },
-  { 
-    name: 'DevOps', 
-    level: 80, 
-    category: 'Infrastructure', 
-    description: 'Docker, CI/CD, AWS',
-    icons: ['https://cdn.simpleicons.org/docker', 'https://cdn.simpleicons.org/githubactions', 'https://cdn.simpleicons.org/amazonwebservices']
   },
   { 
     name: 'Styling / UI', 
