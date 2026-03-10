@@ -53,7 +53,7 @@ export const PROJECTS: Project[] = [
     problem: 'Customers required a fast, secure, and user-friendly platform to book stays with real-time availability.',
     solution: 'Engineered using Next.js Server Components for performance, integrated Google Auth, and seamless booking flows.',
     impact: 'Delivered a high-performance, accessible booking experience with real-time database synchronization.',
-    image: 'https://images.unsplash.com/photo-1449156493391-d2cfa28e468b?q=80&w=2667&auto=format&fit=crop',
+    image: '/wild-oasis.png',
     year: '2023',
   }
 ];
