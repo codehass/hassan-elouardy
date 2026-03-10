@@ -36,7 +36,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           <h3 className="font-sans font-bold text-xl group-hover:text-lab-green transition-colors">
             {project.title}
           </h3>
-          <ArrowUpRight className="text-gray-300 group-hover:text-lab-yellow transition-colors" size={20} />
+          <a 
+            href={project.link} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="z-30 p-1 hover:bg-lab-gray rounded-full transition-all"
+          >
+            <ArrowUpRight className="text-gray-300 group-hover:text-lab-yellow transition-colors" size={20} />
+          </a>
         </div>
         
         <p className="text-gray-600 text-sm mb-6 line-clamp-2">
