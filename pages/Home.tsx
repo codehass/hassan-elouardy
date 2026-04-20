@@ -265,7 +265,7 @@ const Home: React.FC = () => {
 			</section>
 
 			{/* Education Section */}
-			<EducationSection />
+			{/* <EducationSection /> */}
 
 			{/* Tech Stack Matrix */}
 			<section className="py-24 bg-white">
