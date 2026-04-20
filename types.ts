@@ -29,6 +29,15 @@ export interface TechCapability {
   icons: string[];
 }
 
+export interface Education {
+  id: string;
+  degree: string;
+  school: string;
+  date: string;
+  location: string;
+  description: string;
+}
+
 export enum RoutePath {
   HOME = '/',
   PROJECTS = '/projects',

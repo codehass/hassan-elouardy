@@ -1,4 +1,4 @@
-import { Project, Article, TechCapability } from './types';
+import { Project, Article, TechCapability, Education } from './types';
 
 export const NAV_LINKS = [
   { name: 'HOME', path: '/' },
@@ -270,4 +270,31 @@ export const TECH_CAPABILITIES: TechCapability[] = [
     description: 'Tailwind, Shadcn, Styled Comp',
     icons: ['https://cdn.simpleicons.org/tailwindcss']
   },
+];
+
+export const EDUCATION: Education[] = [
+  {
+    id: '1',
+    degree: 'Professional Training – AI & Full Stack Web Development',
+    school: "GIAIC (Governor's Initiative for AI & Computing)",
+    date: '2023 – Present',
+    location: 'Governor House, Karachi',
+    description: 'Pursuing advanced training in TypeScript (Q1 – 80%), Next.js (Q2 – 92%), and Python with Agentic AI (Q3 – Ongoing). Gained hands-on experience in full-stack app development.'
+  },
+  {
+    id: '2',
+    degree: 'Intermediate (In Progress)',
+    school: 'degree College',
+    date: '2020 – 2022',
+    location: 'Karachi, Pakistan',
+    description: 'Planning to pursue intermediate education in Computer Science. Meanwhile, learning through real-world coding, projects, and global tech communities.'
+  },
+  {
+    id: '3',
+    degree: 'Matriculation',
+    school: 'TGGHHS School',
+    date: '2018 – 2020',
+    location: 'Karachi, Pakistan',
+    description: 'Completed matriculation with distinction, focusing on science subjects. Developed a strong foundation in mathematics and scientific principles.'
+  }
 ];

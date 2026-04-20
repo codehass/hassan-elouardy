@@ -2,6 +2,7 @@ import React from 'react';
 import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
+import Chatbot from './components/Chatbot';
 import Home from './pages/Home';
 import AllProjects from './pages/AllProjects';
 import Articles from './pages/Articles';
@@ -76,6 +77,7 @@ const App: React.FC = () => {
         <main className="flex-grow">
           <AnimatedRoutes />
         </main>
+        <Chatbot />
         <Footer />
       </div>
     </HashRouter>
